@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Juego de adivinación de Hexadecimal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="guess-body" class="colored-bg">
+            <div class="title">Adivina el Color Hexadecimal</div>
+            <div class="wrapper">
+                <div class="input-wrapper">
+                    <div class="input-group">
+                    <span class="input-group-addon">#</span>
+                    <input class="guess-input" type="text" maxlength="6" size="7" />
+                    </div>
+                </div>
+                <div id="guess-div">
+                    <button id="guess-button" class="button" onclick="evaluateHex()">
+                      GUESS
+                    </button>
+                  </div>
+                <div id="results-div">
+                    <div class="results">
+                    Tu color:
+                    <div class="result-color">
+                        
+                    </div>
+                    </div>
+                    <div class="results">
+                        <span class="result-message">
+                            
+                        </span>
+                        </div>
+                    <div class="results">
+                    Respuesta:
+                    <span class="result-answer">
+                        100000
+                    </span>
+                    </div>
+                    <button id="reset-button" class="button" onclick="newRandomBg()">
+                    OTRA VEZ
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

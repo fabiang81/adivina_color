@@ -1,0 +1,124 @@
+body {
+    font-family: 'Quicksand', helvetica, arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 3em;
+    width: 300px;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.wrapper {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.colored-bg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.input-wrapper {
+    background-color: #222;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 16px;
+}
+
+.guess-input {
+    height: 45px;
+    font-size: 1em;
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+body:not(.user-is-tabbing) .button:focus,
+body:not(.user-is-tabbing) .guess-input:focus {
+  outline: none;
+}
+
+.button {
+    width: 100%;
+    margin-top: 25px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, .35);
+    transition: background-color 100ms ease-in-out;
+    transition: box-shadow 100ms ease-in-out;
+  }
+
+.button:hover {
+    background-color: #555;
+}
+  
+.button:active {
+    box-shadow: none;
+    background-color: #222;
+}
+
+#results-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+  
+.result-color {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 30px;
+    background: black;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+  
+.result-score {
+    margin: 5px;
+    margin-top: 0px;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.result-message {
+    margin: 5px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+  
+.result-answer {
+    margin: 5px;
+    margin-top: 0px;
+    font-weight: 900;
+    font-size: 1.5em;
+}
